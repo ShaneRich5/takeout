@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('users', 'UserController');
+Route::resource('session', 'SessionController');
+
+// Route::resource('orders', 'OrderController');
+// Route::resource('store', 'StoreController');
+// Route::resource('courier', 'CourierController');
+// Route::resource('employee', 'EmployeeConroller');
+// Route::resource('courier-service', 'CourierServiceController');
+// Route::resource('roles', 'RoleController');
